@@ -86,7 +86,7 @@ export const QuemSomosOQueFazemos = () => {
       id: "kaiaki-produto",
       icon: <Layers className="text-pmg-tizza" size={24} />,
       title: "Sistema Kaiaki",
-      tag: "Primeiro Produto",
+      tag: "primeiro_produto",
       tagColor: "bg-pmg-tizza/10 text-pmg-tizza border-pmg-tizza/20",
       desc: "Nosso primeiro produto transforma a conexão entre cliente e produção em operação real:",
       bullets: [
@@ -101,7 +101,7 @@ export const QuemSomosOQueFazemos = () => {
       id: "cloudflow",
       icon: <Database className="text-blue-500" size={24} />,
       title: "Automação CloudFlow",
-      tag: "Módulo de Automação",
+      tag: "modulo_automacao",
       tagColor: "bg-blue-50 text-blue-600 border-blue-200",
       desc: "Automação de pré-impressão que reduz o erro humano no processo:",
       bullets: [
@@ -116,7 +116,7 @@ export const QuemSomosOQueFazemos = () => {
       id: "integracao-ecossistema",
       icon: <ShieldCheck className="text-purple-500" size={24} />,
       title: "Integração do Ecossistema",
-      tag: "Conectividade",
+      tag: "conectividade",
       tagColor: "bg-purple-50 text-purple-600 border-purple-200",
       desc: "A camada que une as empresas do PMG Group numa só experiência para o cliente:",
       bullets: [
@@ -130,13 +130,13 @@ export const QuemSomosOQueFazemos = () => {
   ];
 
   return (
-    <section id="apresentacao" className="py-20 bg-pmg-navy text-white relative border-b border-white/10 scroll-mt-20">
+    <section id="apresentacao" className="py-20 bg-pmg-navy circuit-dots text-white relative border-b border-white/10 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Navigation Tabs Header */}
         <div className="flex flex-col items-center text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-pmg-tizza uppercase tracking-wider mb-6">
-            <span>Apresentação Institucional</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 font-mono text-[11px] font-medium text-pmg-tizza tracking-wide mb-6">
+            <span>apresentacao_institucional</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4 max-w-2xl">
@@ -232,25 +232,29 @@ export const QuemSomosOQueFazemos = () => {
               </div>
 
               {/* Arquitetura do Ecossistema — fluxo Tizza -> Kaiaki -> PMG -> Cliente */}
-              <div className="p-8 sm:p-10 rounded-3xl bg-white/[0.02] border border-white/10 mb-8">
-                <div className="flex items-center gap-2 mb-8">
+              <div className="p-8 sm:p-10 rounded-3xl bg-white/[0.02] border border-white/10 mb-8 circuit-dots">
+                <div className="flex items-center gap-2 mb-8 font-mono">
                   <Sparkles size={18} className="text-pmg-tizza" />
-                  <span className="text-xs font-bold uppercase tracking-widest text-slate-300">Arquitetura do Ecossistema</span>
+                  <span className="text-[11px] font-bold tracking-wide text-slate-300">arquitetura_do_ecossistema</span>
                 </div>
 
                 <div className="flex flex-col lg:flex-row items-stretch gap-3 lg:gap-2">
                   {fluxoEcossistema.map((item, idx) => (
                     <React.Fragment key={idx}>
                       <div className={`flex-1 rounded-2xl border p-5 flex flex-col gap-2 ${item.color}`}>
-                        <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
-                          {item.icon}
+                        <div className="flex items-center justify-between">
+                          <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
+                            {item.icon}
+                          </div>
+                          <span className="font-mono text-[10px] text-white/40">0{idx + 1}</span>
                         </div>
                         <div className="text-sm font-bold text-white">{item.title}</div>
                         <p className="text-xs text-slate-300 font-light leading-relaxed">{item.subtitle}</p>
                       </div>
                       {idx < fluxoEcossistema.length - 1 && (
-                        <div className="flex items-center justify-center shrink-0 text-slate-500">
-                          <ArrowRight size={18} className="hidden lg:block" />
+                        <div className="flex items-center justify-center shrink-0 text-slate-600">
+                          <div className="hidden lg:block w-4 border-t border-dashed border-slate-600" />
+                          <ArrowRight size={14} className="hidden lg:block -mx-1" />
                           <ArrowDown size={18} className="lg:hidden" />
                         </div>
                       )}
@@ -292,7 +296,7 @@ export const QuemSomosOQueFazemos = () => {
                         <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
                           {servico.icon}
                         </div>
-                        <span className={`text-[10px] font-bold uppercase px-3 py-1 rounded-full border ${servico.tagColor}`}>
+                        <span className={`text-[10px] font-mono font-bold px-3 py-1 rounded-full border ${servico.tagColor}`}>
                           {servico.tag}
                         </span>
                       </div>

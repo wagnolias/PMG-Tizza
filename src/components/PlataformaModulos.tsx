@@ -3,7 +3,7 @@ import { Sparkles, Layers, Database, ShieldCheck, Check } from 'lucide-react';
 
 export const PlataformaModulos = () => {
   return (
-    <section id="plataforma" className="py-24 bg-slate-50 text-pmg-dark relative overflow-hidden border-b border-slate-200 scroll-mt-20">
+    <section id="plataforma" className="py-24 bg-slate-50 circuit-dots text-pmg-dark relative overflow-hidden border-b border-slate-200 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
 
         {/* Header */}
@@ -31,8 +31,8 @@ export const PlataformaModulos = () => {
                 <div className="w-12 h-12 rounded-2xl bg-pmg-tizza/10 text-pmg-tizza flex items-center justify-center font-black">
                   <Layers size={22} />
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-pmg-tizza bg-pmg-tizza/10 px-3 py-1 rounded-full">
-                  1º Produto
+                <span className="text-[10px] font-mono font-bold tracking-wide text-pmg-tizza bg-pmg-tizza/10 px-3 py-1 rounded-full">
+                  1o_produto
                 </span>
               </div>
 
@@ -61,7 +61,7 @@ export const PlataformaModulos = () => {
             </div>
 
             <div className="pt-4 border-t border-slate-200 text-center">
-              <span className="text-xs font-semibold text-slate-500">Produto Tizza</span>
+              <span className="text-[11px] font-mono text-slate-500">tizza::produto</span>
             </div>
           </div>
 
@@ -72,8 +72,8 @@ export const PlataformaModulos = () => {
                 <div className="w-12 h-12 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center font-black">
                   <Database size={22} />
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600 bg-blue-100 px-3 py-1 rounded-full">
-                  Automação
+                <span className="text-[10px] font-mono font-bold tracking-wide text-blue-600 bg-blue-100 px-3 py-1 rounded-full">
+                  automacao
                 </span>
               </div>
 
@@ -102,7 +102,7 @@ export const PlataformaModulos = () => {
             </div>
 
             <div className="pt-4 border-t border-slate-200 text-center">
-              <span className="text-xs font-semibold text-blue-600">Módulo Tizza</span>
+              <span className="text-[11px] font-mono text-blue-600">tizza::modulo</span>
             </div>
           </div>
 
@@ -113,8 +113,8 @@ export const PlataformaModulos = () => {
                 <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-black">
                   <ShieldCheck size={22} />
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-600 bg-emerald-100 px-3 py-1 rounded-full">
-                  Integração
+                <span className="text-[10px] font-mono font-bold tracking-wide text-emerald-600 bg-emerald-100 px-3 py-1 rounded-full">
+                  integracao
                 </span>
               </div>
 
@@ -143,7 +143,7 @@ export const PlataformaModulos = () => {
             </div>
 
             <div className="pt-4 border-t border-slate-200 text-center">
-              <span className="text-xs font-semibold text-emerald-600">Camada Tizza</span>
+              <span className="text-[11px] font-mono text-emerald-600">tizza::camada</span>
             </div>
           </div>
 

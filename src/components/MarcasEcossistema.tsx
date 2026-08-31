@@ -9,14 +9,14 @@ import {
 
 export const MarcasEcossistema = () => {
   return (
-    <section id="ecossistema" className="py-24 bg-pmg-navy text-white border-b border-white/10 scroll-mt-20">
+    <section id="ecossistema" className="py-24 bg-pmg-navy circuit-dots text-white border-b border-white/10 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
         <div className="max-w-2xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-pmg-tizza uppercase tracking-wider mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 font-mono text-[11px] font-medium text-pmg-tizza tracking-wide mb-4">
             <Sparkles size={13} />
-            <span>Ecossistema Integrado</span>
+            <span>ecossistema_integrado</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
             A inteligência digital que conecta o ecossistema
@@ -44,8 +44,8 @@ export const MarcasEcossistema = () => {
                     referrerPolicy="no-referrer"
                   />
                 </div>
-                <span className="text-[10px] font-black uppercase tracking-widest text-pmg-tizza bg-pmg-tizza/20 px-3 py-1 rounded-full border border-pmg-tizza/30">
-                  Camada de Tecnologia
+                <span className="text-[10px] font-mono font-bold tracking-wide text-pmg-tizza bg-pmg-tizza/20 px-3 py-1 rounded-full border border-pmg-tizza/30">
+                  camada_tecnologia
                 </span>
               </div>
 
@@ -78,7 +78,7 @@ export const MarcasEcossistema = () => {
                 <span>Conhecer a Plataforma</span>
                 <ArrowRight size={13} />
               </a>
-              <span className="text-xs text-slate-400 font-medium">100% Online</span>
+              <span className="font-mono text-[11px] text-slate-400">100pct_online</span>
             </div>
           </div>
 
@@ -94,8 +94,8 @@ export const MarcasEcossistema = () => {
                     referrerPolicy="no-referrer"
                   />
                 </div>
-                <span className="text-[10px] font-bold text-rose-400 bg-rose-500/15 px-3 py-1 rounded-full uppercase border border-rose-400/30">
-                  Banda Larga
+                <span className="text-[10px] font-mono font-bold text-rose-400 bg-rose-500/15 px-3 py-1 rounded-full border border-rose-400/30">
+                  banda_larga
                 </span>
               </div>
 
@@ -133,7 +133,7 @@ export const MarcasEcossistema = () => {
                 <span>Visitar PMG Flexo</span>
                 <ExternalLink size={13} />
               </a>
-              <span className="text-xs text-slate-400 font-medium">Banda Larga</span>
+              <span className="font-mono text-[11px] text-slate-400">banda_larga</span>
             </div>
           </div>
 
@@ -148,8 +148,8 @@ export const MarcasEcossistema = () => {
                     className="h-8 w-auto object-contain"
                   />
                 </div>
-                <span className="text-[10px] font-bold text-sky-400 bg-sky-500/15 px-3 py-1 rounded-full uppercase border border-sky-400/30">
-                  Banda Estreita
+                <span className="text-[10px] font-mono font-bold text-sky-400 bg-sky-500/15 px-3 py-1 rounded-full border border-sky-400/30">
+                  banda_estreita
                 </span>
               </div>
 
@@ -187,7 +187,7 @@ export const MarcasEcossistema = () => {
                 <span>Visitar PMG Narrow</span>
                 <ExternalLink size={13} />
               </a>
-              <span className="text-xs text-slate-400 font-medium">Banda Estreita</span>
+              <span className="font-mono text-[11px] text-slate-400">banda_estreita</span>
             </div>
           </div>
 
@@ -204,8 +204,8 @@ export const MarcasEcossistema = () => {
                     referrerPolicy="no-referrer"
                   />
                 </div>
-                <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/15 px-3 py-1 rounded-full uppercase border border-emerald-400/30">
-                  Distribuição de Filmes
+                <span className="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/15 px-3 py-1 rounded-full border border-emerald-400/30">
+                  distribuicao_filmes
                 </span>
               </div>
 
@@ -242,9 +242,9 @@ export const MarcasEcossistema = () => {
                 <span>Acessar vpfilmes.com.br</span>
                 <ExternalLink size={13} />
               </a>
-              <div className="text-xs text-slate-400 font-medium flex items-center gap-1">
+              <div className="font-mono text-[11px] text-slate-400 flex items-center gap-1">
                 <MapPin size={12} className="text-emerald-400" />
-                <span>Blumenau-SC</span>
+                <span>blumenau_sc</span>
               </div>
             </div>
           </div>

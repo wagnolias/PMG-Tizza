@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
 
   --color-pmg-navy: #0A192F;
   --color-pmg-tizza: #009FE3;
@@ -32,3 +33,13 @@
 .cyan-glow {
   box-shadow: 0 0 20px rgba(0, 174, 239, 0.3);
 }
+
+.circuit-dots {
+  background-image: radial-gradient(rgba(0, 159, 227, 0.25) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.terminal-chrome {
+  background: #050c1a;
+}
+

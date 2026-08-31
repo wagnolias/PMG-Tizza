@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Send, CheckCircle2 } from 'lucide-react';
+import { TerminalWindow } from './TerminalWindow';
 
 export const ContactSection = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -26,8 +27,8 @@ export const ContactSection = () => {
           {/* Left Column: Direct Info */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pmg-tizza/10 text-pmg-tizza text-xs font-semibold uppercase tracking-wider mb-4">
-                Atendimento
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pmg-tizza/10 text-pmg-tizza font-mono text-[11px] font-medium tracking-wide mb-4">
+                atendimento
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-pmg-navy tracking-tight mb-4">
                 Fale com nossos especialistas
@@ -57,8 +58,9 @@ export const ContactSection = () => {
 
           {/* Right Column: Contact Form */}
           <div className="lg:col-span-7">
-            <div className="bg-pmg-navy rounded-3xl p-8 sm:p-10 text-white relative overflow-hidden border border-white/10 shadow-2xl">
-              
+            <TerminalWindow label="tizza@contato:~">
+            <div className="p-8 sm:p-10 text-white relative overflow-hidden">
+
               {formSubmitted ? (
                 <div className="py-12 text-center">
                   <div className="w-14 h-14 rounded-full bg-pmg-tizza/20 text-pmg-tizza mx-auto flex items-center justify-center mb-4">
@@ -88,7 +90,7 @@ export const ContactSection = () => {
               ) : (
                 <>
                   <div className="mb-6">
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-pmg-tizza">Solicitação Online</span>
+                    <span className="text-[10px] font-mono font-bold tracking-wide text-pmg-tizza">solicitacao_online</span>
                     <h3 className="text-2xl font-bold text-white">Solicite atendimento ou cotação</h3>
                   </div>
 
@@ -179,6 +181,7 @@ export const ContactSection = () => {
                 </>
               )}
             </div>
+            </TerminalWindow>
           </div>
 
         </div>

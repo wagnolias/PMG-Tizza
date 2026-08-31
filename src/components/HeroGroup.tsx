@@ -1,13 +1,16 @@
 import React from 'react';
 import { ArrowRight, Layers, Database, ShieldCheck } from 'lucide-react';
 import { motion } from 'motion/react';
+import { NetworkBackground } from './NetworkBackground';
+import { TerminalWindow } from './TerminalWindow';
 
 export const HeroGroup = () => {
   return (
     <section id="home" className="relative min-h-[92vh] flex flex-col justify-center pt-32 pb-20 overflow-hidden bg-pmg-navy text-white">
-      {/* Static Gradient Background */}
+      {/* Gradient + Animated Network Background */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <div className="absolute inset-0 tech-gradient" />
+        <NetworkBackground className="absolute inset-0 w-full h-full opacity-70" />
         <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-pmg-tizza/15 rounded-full blur-[120px]" />
         <div className="absolute bottom-10 -right-20 w-[500px] h-[500px] bg-blue-600/15 rounded-full blur-[120px]" />
       </div>
@@ -25,10 +28,11 @@ export const HeroGroup = () => {
             className="lg:col-span-7"
           >
             {/* Tagline */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-slate-300 tracking-wide mb-6">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 font-mono text-[11px] font-medium text-slate-300 tracking-wide mb-6">
               <span className="w-2 h-2 rounded-full bg-pmg-tizza animate-pulse"></span>
-              <span className="text-white font-bold">TIZZA TECNOLOGIA</span>
-              <span className="text-slate-400">| Inteligência Digital do Ecossistema PMG</span>
+              <span className="text-white font-bold">TIZZA_TECNOLOGIA</span>
+              <span className="text-slate-500">·</span>
+              <span className="text-slate-400">inteligencia_digital.pmg</span>
             </div>
 
             {/* Main Headline */}
@@ -60,15 +64,15 @@ export const HeroGroup = () => {
             </div>
 
             {/* Differentiator Pills */}
-            <div className="mt-12 pt-8 border-t border-white/10 flex flex-wrap gap-3 max-w-lg">
-              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-200 bg-white/5 border border-white/10 rounded-full px-3.5 py-2">
-                Tecnologia & Plataforma
+            <div className="mt-12 pt-8 border-t border-white/10 flex flex-wrap gap-3 max-w-lg font-mono">
+              <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-slate-200 bg-white/5 border border-white/10 rounded-full px-3.5 py-2">
+                <span className="text-pmg-tizza">#</span>tecnologia_plataforma
               </span>
-              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-200 bg-white/5 border border-white/10 rounded-full px-3.5 py-2">
-                Dados & Automação
+              <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-slate-200 bg-white/5 border border-white/10 rounded-full px-3.5 py-2">
+                <span className="text-pmg-tizza">#</span>dados_automacao
               </span>
-              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-200 bg-white/5 border border-white/10 rounded-full px-3.5 py-2">
-                Integração de Ecossistema
+              <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-slate-200 bg-white/5 border border-white/10 rounded-full px-3.5 py-2">
+                <span className="text-pmg-tizza">#</span>integracao_ecossistema
               </span>
             </div>
           </motion.div>
@@ -80,11 +84,12 @@ export const HeroGroup = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="lg:col-span-5"
           >
-            <div className="rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-6 sm:p-8 shadow-2xl space-y-4">
+            <TerminalWindow label="tizza@plataforma:~">
+              <div className="p-6 sm:p-8 space-y-4">
 
               <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                <div className="text-xs font-bold uppercase tracking-widest text-slate-300">
-                  Camada de Tecnologia PMG
+                <div className="text-[11px] font-bold uppercase tracking-widest text-slate-300">
+                  camada_de_tecnologia_pmg
                 </div>
                 <span className="text-[10px] text-pmg-tizza font-bold bg-pmg-tizza/10 px-2.5 py-1 rounded-full uppercase">
                   Tizza
@@ -151,7 +156,8 @@ export const HeroGroup = () => {
                 </div>
               </a>
 
-            </div>
+              </div>
+            </TerminalWindow>
           </motion.div>
 
         </div>
