@@ -53,10 +53,6 @@ export const ContactSection = () => {
                 </a>
               </div>
             </div>
-
-            <div className="text-xs text-slate-400 font-light">
-              Canal de e-mail a confirmar — atualizar com o contato comercial real da Tizza Tecnologia.
-            </div>
           </div>
 
           {/* Right Column: Contact Form */}

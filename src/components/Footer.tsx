@@ -73,9 +73,6 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm text-slate-300">
               <li>contato@tizzatecnologia.com.br</li>
             </ul>
-            <p className="text-[11px] text-slate-500 font-light mt-3 leading-relaxed">
-              Canal a confirmar — atualizar com o e-mail/WhatsApp real da Tizza Tecnologia.
-            </p>
           </div>
         </div>
 
