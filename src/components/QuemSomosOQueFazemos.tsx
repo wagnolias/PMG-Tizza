@@ -9,9 +9,16 @@ import {
   ArrowDown,
   Database,
   Sparkles,
-  Users
+  Users,
+  Smartphone,
+  Monitor,
+  Bot,
+  Settings2,
+  Link2,
+  BarChart3
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { TerminalWindow } from './TerminalWindow';
 
 export const QuemSomosOQueFazemos = () => {
   const [activeTab, setActiveTab] = useState<'quem-somos' | 'o-que-fazemos'>('quem-somos');
@@ -79,6 +86,15 @@ export const QuemSomosOQueFazemos = () => {
       icon: <Users size={22} />,
       color: "text-purple-400 bg-purple-500/15 border-purple-400/30"
     }
+  ];
+
+  const capacidadesTecnicas = [
+    { icon: <Smartphone size={18} />, label: "Aplicativos personalizados" },
+    { icon: <Monitor size={18} />, label: "Sites responsivos e modernos" },
+    { icon: <Bot size={18} />, label: "Soluções com Inteligência Artificial" },
+    { icon: <Settings2 size={18} />, label: "Automação de processos" },
+    { icon: <Link2 size={18} />, label: "Integração entre sistemas e plataformas" },
+    { icon: <BarChart3 size={18} />, label: "Ferramentas digitais para otimizar operações" }
   ];
 
   const servicosOQueFazemos = [
@@ -330,6 +346,45 @@ export const QuemSomosOQueFazemos = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+
+              {/* Engenharia Aplicada ao Ecossistema */}
+              <div className="mt-10">
+                <TerminalWindow label="tizza@engenharia:~">
+                  <div className="p-8 sm:p-10">
+                    <span className="font-mono text-[11px] font-medium text-pmg-tizza tracking-wide block mb-2">
+                      engenharia_aplicada
+                    </span>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 max-w-2xl">
+                      Tecnologia que transforma ideias em soluções
+                    </h3>
+                    <p className="text-slate-300 text-sm font-light leading-relaxed mb-8 max-w-3xl">
+                      Criar um aplicativo ou um site hoje vai muito além de colocar uma ideia no ar.
+                      Com uso estratégico de Inteligência Artificial, a Tizza desenvolve soluções
+                      digitais sob medida para o ecossistema PMG — de aplicativos personalizados a
+                      sites responsivos, funcionando em computadores, tablets e celulares.
+                    </p>
+
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-8">
+                      {capacidadesTecnicas.map((cap, idx) => (
+                        <div
+                          key={idx}
+                          className="flex items-center gap-3 p-3.5 rounded-xl bg-white/[0.02] border border-white/10"
+                        >
+                          <div className="w-9 h-9 rounded-lg bg-pmg-tizza/10 text-pmg-tizza flex items-center justify-center shrink-0">
+                            {cap.icon}
+                          </div>
+                          <span className="text-xs text-slate-200 font-light">{cap.label}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    <p className="text-slate-400 text-xs font-light leading-relaxed max-w-2xl border-t border-white/10 pt-6">
+                      A tecnologia precisa trabalhar a favor do negócio — simplificando processos,
+                      melhorando experiências e criando novas possibilidades.
+                    </p>
+                  </div>
+                </TerminalWindow>
               </div>
 
               {/* Bottom Callout */}
