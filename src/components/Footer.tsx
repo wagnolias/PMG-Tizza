@@ -71,7 +71,7 @@ export const Footer = () => {
           <div>
             <h4 className="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-3">Contato</h4>
             <ul className="space-y-2 text-sm text-slate-300">
-              <li>contato@tizzatecnologia.com.br</li>
+              <li>suporte@pmgflexo.com.br</li>
             </ul>
           </div>
         </div>
