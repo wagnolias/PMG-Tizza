@@ -64,7 +64,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
           onClick={(e) => { e.preventDefault(); onNavigate('quem-somos'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
         >
           <img
-            src="https://i.ibb.co/WvtGBSxN/Logo-Tizza-BRANCO-01-1024x461.png"
+            src={`${import.meta.env.BASE_URL}assets/img/logo-tizza-branco-01-1024x461.png`}
             alt="Tizza Tecnologia"
             className="h-8 sm:h-9 w-auto object-contain"
             referrerPolicy="no-referrer"

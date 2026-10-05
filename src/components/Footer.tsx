@@ -13,7 +13,7 @@ export const Footer = () => {
           {/* Brand block */}
           <div className="lg:col-span-1">
             <img
-              src="https://i.ibb.co/WvtGBSxN/Logo-Tizza-BRANCO-01-1024x461.png"
+              src={`${import.meta.env.BASE_URL}assets/img/logo-tizza-branco-01-1024x461.png`}
               alt="Tizza Tecnologia"
               className="h-8 w-auto object-contain mb-4"
               referrerPolicy="no-referrer"

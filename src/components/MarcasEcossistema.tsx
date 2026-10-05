@@ -38,7 +38,7 @@ export const MarcasEcossistema = () => {
               <div className="flex items-center justify-between gap-4 mb-6">
                 <div className="h-11 flex items-center">
                   <img
-                    src="https://i.ibb.co/WvtGBSxN/Logo-Tizza-BRANCO-01-1024x461.png"
+                    src={`${import.meta.env.BASE_URL}assets/img/logo-tizza-branco-01-1024x461.png`}
                     alt="Logo Tizza Tecnologia"
                     className="h-9 w-auto object-contain"
                     referrerPolicy="no-referrer"
@@ -88,7 +88,7 @@ export const MarcasEcossistema = () => {
               <div className="flex items-center justify-between gap-4 mb-6">
                 <div className="h-11 flex items-center">
                   <img
-                    src="https://i.ibb.co/NgZcFb4B/Logo-PMG-FLEXO-BRANCO-E-VERMELHO.png"
+                    src={`${import.meta.env.BASE_URL}assets/img/logo-pmg-flexo-branco-e-vermelho.png`}
                     alt="Logo PMG Flexo"
                     className="h-10 w-auto object-contain"
                     referrerPolicy="no-referrer"
@@ -197,7 +197,7 @@ export const MarcasEcossistema = () => {
               <div className="flex items-center justify-between gap-4 mb-6">
                 <div className="h-11 flex items-center">
                   <img
-                    src="https://i.ibb.co/PGDXcCTN/LOGO-VP-AZUL.png"
+                    src={`${import.meta.env.BASE_URL}assets/img/logo-vp-azul.png`}
                     alt="Logo VP Filmes"
                     className="h-10 w-auto object-contain"
                     style={{ filter: 'saturate(4) brightness(1.7) hue-rotate(-22deg)' }}
@@ -267,7 +267,7 @@ export const MarcasEcossistema = () => {
 
           <div className="shrink-0 flex items-center justify-center">
             <img
-              src="https://i.ibb.co/N2f7Yddq/Marcas-da-Pmg.png"
+              src={`${import.meta.env.BASE_URL}assets/img/marcas-da-pmg.png`}
               alt="Marcas da PMG"
               className="max-h-20 sm:max-h-24 w-auto object-contain"
               referrerPolicy="no-referrer"

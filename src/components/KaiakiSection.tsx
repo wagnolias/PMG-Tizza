@@ -10,7 +10,7 @@ const SCREENS = [
     caption: 'Acesso Seguro ao Sistema'
   },
   {
-    src: 'https://i.ibb.co/wZtcZnWf/kaiaki2.png',
+    src: `${import.meta.env.BASE_URL}assets/img/kaiaki2.png`,
     label: 'Módulos',
     caption: 'Todos os Módulos do Dashboard'
   },
